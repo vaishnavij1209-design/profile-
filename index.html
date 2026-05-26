@@ -119,6 +119,193 @@
             color: #555;
         }
 
+        /* About Me Enhanced */
+        .about-intro {
+            font-size: 15px;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f4ff;
+            border-radius: 10px;
+            border-left: 4px solid #6a11cb;
+        }
+
+        /* Highlight Box */
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(106, 17, 203, 0.3);
+        }
+
+        .highlight-box .icon {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .highlight-box h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .highlight-box p {
+            font-size: 13px;
+            opacity: 0.9;
+            line-height: 1.7;
+            color: white;
+        }
+
+        /* Coaching Section */
+        .coaching-section {
+            margin-top: 20px;
+        }
+
+        .coaching-title {
+            font-size: 18px;
+            color: #6a11cb;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coaching-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .coaching-item {
+            background-color: #f8f4ff;
+            border: 1px solid #e0d4f7;
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .coaching-item:hover {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .coaching-item:hover p {
+            color: white;
+        }
+
+        .coaching-item .c-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .coaching-item h4 {
+            font-size: 14px;
+            color: #6a11cb;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .coaching-item:hover h4 {
+            color: white;
+        }
+
+        .coaching-item p {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.6;
+        }
+
+        /* Quote Box */
+        .quote-box {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: '"';
+            font-size: 80px;
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+
+        .quote-box p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: white;
+            z-index: 1;
+            position: relative;
+        }
+
+        .quote-box .author {
+            font-size: 13px;
+            margin-top: 10px;
+            opacity: 0.8;
+            font-style: normal;
+        }
+
+        /* Puzzle Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background-color: #f8f4ff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #e0d4f7;
+            transition: all 0.3s ease;
+        }
+
+        .stat-box:hover {
+            border-color: #6a11cb;
+            background-color: #ede4ff;
+        }
+
+        .stat-box h3 {
+            font-size: 32px;
+            color: #6a11cb;
+            font-weight: bold;
+        }
+
+        .stat-box p {
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         /* Info Grid */
         .info-grid {
             display: grid;
@@ -199,6 +386,11 @@
             border-radius: 20px;
             font-size: 13px;
             letter-spacing: 0.5px;
+            transition: transform 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            transform: scale(1.05);
         }
 
         /* Experience Timeline */
@@ -258,6 +450,16 @@
         .footer p {
             font-size: 14px;
             opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        /* Divider */
+        .divider {
+            height: 2px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            border-radius: 5px;
+            margin: 20px 0;
+            opacity: 0.3;
         }
 
         /* Responsive */
@@ -274,6 +476,10 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .stat-box h3 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
@@ -283,31 +489,182 @@
     <div class="header">
         <div class="avatar">VJ</div>
         <h1>Vaishnavi J</h1>
-        <p>Mathematics Educator | Researcher | Mentor</p>
+        <p>Mathematics Educator | Puzzle Solver | Aptitude Coach | Mentor</p>
         <p class="college">📍 PKDAS Liberal College of Arts and Science, Lakkidi Mangalam</p>
         <div class="badges">
             <span class="badge">🎓 M.Sc. Mathematics</span>
             <span class="badge">📚 M.Ed. Mathematics</span>
             <span class="badge">💼 2 Years Experience</span>
+            <span class="badge">🧩 Puzzle Solver</span>
+            <span class="badge">🧠 Aptitude Coach</span>
         </div>
     </div>
 
     <!-- Main Content -->
     <div class="container">
 
-        <!-- About Me -->
+        <!-- About Me Enhanced -->
         <div class="card">
             <h2><span>👩‍🏫</span> About Me</h2>
+
+            <!-- Intro Para -->
+            <div class="about-intro">
+                Vaishnavi J is a dynamic and passionate <strong>Mathematics Educator, Puzzle Solver,
+                and Aptitude Coaching Expert</strong> based at PKDAS Liberal College of Arts and Science,
+                Lakkidi Mangalam. With a strong academic foundation of <strong>M.Sc. and M.Ed. in
+                Mathematics</strong> and <strong>2 years of dedicated teaching experience</strong>,
+                she brings both knowledge and enthusiasm to every classroom session.
+            </div>
+
             <p>
-                Vaishnavi J is a dedicated and passionate Mathematics educator with a strong
-                academic background, holding both a Master of Science (M.Sc.) and a Master
-                of Education (M.Ed.) in Mathematics. With two years of teaching experience,
-                she is committed to fostering analytical thinking and conceptual clarity among
-                students. She specializes in delivering engaging and student-centered instruction,
-                and is enthusiastic about continuous learning, integrating modern pedagogical
-                techniques, and contributing to institutional growth through academic dedication
-                and professional integrity.
+                Beyond her academic role, Vaishnavi has a deep passion for <strong>logical puzzles,
+                brain teasers, and mathematical challenges</strong>. She believes that solving puzzles
+                sharpens the mind and builds the foundation for strong analytical and reasoning abilities.
+                This passion drives her to incorporate fun and interactive problem-solving activities
+                into her teaching, making mathematics an enjoyable and rewarding experience for her students.
             </p>
+
+            <div class="divider"></div>
+
+            <!-- Highlight Boxes -->
+            <div class="highlight-grid">
+                <div class="highlight-box">
+                    <div class="icon">👩‍🏫</div>
+                    <h3>Mathematics Educator</h3>
+                    <p>Delivering engaging undergraduate mathematics lectures with a student-centered
+                    approach and innovative teaching techniques.</p>
+                </div>
+                <div class="highlight-box">
+                    <div class="icon">🧩</div>
+                    <h3>Puzzle Solver</h3>
+                    <p>Passionate about logical puzzles, brain teasers, and mathematical challenges
+                    that build critical thinking and problem-solving skills.</p>
+                </div>
+                <div class="highlight-box">
+                    <div class="icon">🧠</div>
+                    <h3>Aptitude Coach</h3>
+                    <p>Expert in coaching students for competitive exams, placement tests, and
+                    aptitude assessments with proven strategies and techniques.</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Puzzle Solver Section -->
+            <div class="coaching-title">🧩 Puzzle Solving Expertise</div>
+            <p style="margin-bottom: 15px; color: #555; font-size: 15px; line-height: 1.8;">
+                Vaishnavi has an extraordinary ability to solve complex mathematical puzzles and
+                logical problems with ease and creativity. She regularly engages students in
+                puzzle-solving sessions to develop their <strong>lateral thinking, pattern recognition,
+                and logical reasoning skills</strong>. Her puzzle-solving sessions are known for being
+                interactive, challenging, and highly rewarding.
+            </p>
+            <div class="coaching-grid">
+                <div class="coaching-item">
+                    <div class="c-icon">🔢</div>
+                    <h4>Number Puzzles</h4>
+                    <p>Sudoku, Magic Squares, Number Sequences & Mathematical Riddles</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">🔷</div>
+                    <h4>Logical Puzzles</h4>
+                    <p>Pattern Recognition, Logical Deduction & Analytical Reasoning</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">♟️</div>
+                    <h4>Brain Teasers</h4>
+                    <p>Critical Thinking Problems, IQ Challenges & Mind Games</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">📐</div>
+                    <h4>Geometry Puzzles</h4>
+                    <p>Spatial Reasoning, Shape Problems & Mathematical Proofs</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Aptitude Coaching Section -->
+            <div class="coaching-title">🎯 Aptitude Coaching Services</div>
+            <p style="margin-bottom: 15px; color: #555; font-size: 15px; line-height: 1.8;">
+                Vaishnavi offers <strong>comprehensive aptitude coaching</strong> for students
+                preparing for competitive examinations, government jobs, placement tests, and
+                entrance exams. Her coaching methodology focuses on building a strong foundation,
+                improving speed and accuracy, and developing exam-ready confidence in every student.
+            </p>
+            <div class="coaching-grid">
+                <div class="coaching-item">
+                    <div class="c-icon">📊</div>
+                    <h4>Quantitative Aptitude</h4>
+                    <p>Arithmetic, Algebra, Geometry, Data Interpretation & Number Theory</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">🧩</div>
+                    <h4>Logical Reasoning</h4>
+                    <p>Verbal Reasoning, Non-Verbal Reasoning, Analytical Puzzles & Series</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">⚡</div>
+                    <h4>Speed & Accuracy</h4>
+                    <p>Vedic Mathematics Tricks, Shortcuts & Time Management Techniques</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">🏆</div>
+                    <h4>Exam Preparation</h4>
+                    <p>TET, NET, TNPSC, Bank Exams, Campus Placements & Entrance Tests</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">📝</div>
+                    <h4>Mock Tests</h4>
+                    <p>Regular Practice Tests, Performance Analysis & Personalized Feedback</p>
+                </div>
+                <div class="coaching-item">
+                    <div class="c-icon">🎓</div>
+                    <h4>One-on-One Coaching</h4>
+                    <p>Personalized Mentoring, Doubt Clearing Sessions & Customized Study Plans</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Stats -->
+            <div class="coaching-title">📊 At a Glance</div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>2+</h3>
+                    <p>Years Teaching</p>
+                </div>
+                <div class="stat-box">
+                    <h3>500+</h3>
+                    <p>Students Taught</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100+</h3>
+                    <p>Puzzles Solved</p>
+                </div>
+                <div class="stat-box">
+                    <h3>50+</h3>
+                    <p>Students Coached</p>
+                </div>
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Topics Covered</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Quote -->
+            <div class="quote-box">
+                <p>
+                    "Mathematics is not just about numbers and equations —
+                    it is about understanding patterns, solving puzzles,
+                    and discovering the beauty hidden in every problem.
+                    My goal is to make every student fall in love with Mathematics."
+                </p>
+                <p class="author">— Vaishnavi J, Mathematics Educator & Aptitude Coach</p>
+            </div>
+
         </div>
 
         <!-- Personal Info -->
@@ -342,7 +699,7 @@
                 <div class="info-item">
                     <div class="icon">🎯</div>
                     <h4>Role</h4>
-                    <p>Faculty / Educator</p>
+                    <p>Educator | Coach</p>
                 </div>
             </div>
         </div>
@@ -393,6 +750,22 @@
                     <p>Delivering undergraduate mathematics lectures, curriculum planning,
                     student mentoring, and academic assessment.</p>
                 </div>
+                <div class="timeline-item">
+                    <span class="year">2022 - Present</span>
+                    <h4>Aptitude Coach</h4>
+                    <p>Private Coaching & Academic Institution</p>
+                    <p>Coaching students for competitive exams, placement tests,
+                    and aptitude assessments. Conducting regular mock tests,
+                    doubt clearing sessions, and personalized study plan creation.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">2022 - Present</span>
+                    <h4>Puzzle Solving Trainer</h4>
+                    <p>PKDAS Liberal College of Arts and Science</p>
+                    <p>Conducting interactive puzzle-solving sessions, brain teaser
+                    workshops, and logical reasoning training for students to enhance
+                    their critical thinking and problem-solving abilities.</p>
+                </div>
             </div>
         </div>
 
@@ -409,6 +782,14 @@
                 <span class="skill-tag">Academic Assessment</span>
                 <span class="skill-tag">Problem Solving</span>
                 <span class="skill-tag">Critical Thinking</span>
+                <span class="skill-tag">Puzzle Solving</span>
+                <span class="skill-tag">Logical Reasoning</span>
+                <span class="skill-tag">Aptitude Coaching</span>
+                <span class="skill-tag">Quantitative Aptitude</span>
+                <span class="skill-tag">Vedic Mathematics</span>
+                <span class="skill-tag">Mock Test Training</span>
+                <span class="skill-tag">Brain Teasers</span>
+                <span class="skill-tag">Competitive Exam Prep</span>
                 <span class="skill-tag">E-Learning Tools</span>
             </div>
         </div>
@@ -417,8 +798,11 @@
 
     <!-- Footer -->
     <div class="footer">
-        <p>© 2024 Vaishnavi J | Mathematics Educator</p>
+        <p>© 2024 Vaishnavi J | Mathematics Educator | Puzzle Solver | Aptitude Coach</p>
         <p>PKDAS Liberal College of Arts and Science, Lakkidi Mangalam</p>
+        <p style="margin-top: 10px; font-size: 12px; opacity: 0.7;">
+            "Solving Problems | Building Minds | Inspiring Futures"
+        </p>
     </div>
 
 </body>
