@@ -119,193 +119,6 @@
             color: #555;
         }
 
-        /* About Me Enhanced */
-        .about-intro {
-            font-size: 15px;
-            line-height: 1.9;
-            color: #555;
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f4ff;
-            border-radius: 10px;
-            border-left: 4px solid #6a11cb;
-        }
-
-        /* Highlight Box */
-        .highlight-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .highlight-box {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .highlight-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(106, 17, 203, 0.3);
-        }
-
-        .highlight-box .icon {
-            font-size: 40px;
-            margin-bottom: 12px;
-        }
-
-        .highlight-box h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .highlight-box p {
-            font-size: 13px;
-            opacity: 0.9;
-            line-height: 1.7;
-            color: white;
-        }
-
-        /* Coaching Section */
-        .coaching-section {
-            margin-top: 20px;
-        }
-
-        .coaching-title {
-            font-size: 18px;
-            color: #6a11cb;
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .coaching-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .coaching-item {
-            background-color: #f8f4ff;
-            border: 1px solid #e0d4f7;
-            border-radius: 10px;
-            padding: 18px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .coaching-item:hover {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            transform: translateY(-3px);
-        }
-
-        .coaching-item:hover p {
-            color: white;
-        }
-
-        .coaching-item .c-icon {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-
-        .coaching-item h4 {
-            font-size: 14px;
-            color: #6a11cb;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .coaching-item:hover h4 {
-            color: white;
-        }
-
-        .coaching-item p {
-            font-size: 12px;
-            color: #777;
-            line-height: 1.6;
-        }
-
-        /* Quote Box */
-        .quote-box {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            border-radius: 12px;
-            padding: 25px 30px;
-            margin-top: 20px;
-            text-align: center;
-            font-style: italic;
-            position: relative;
-        }
-
-        .quote-box::before {
-            content: '"';
-            font-size: 80px;
-            position: absolute;
-            top: -10px;
-            left: 15px;
-            opacity: 0.3;
-            font-family: Georgia, serif;
-        }
-
-        .quote-box p {
-            font-size: 16px;
-            line-height: 1.8;
-            color: white;
-            z-index: 1;
-            position: relative;
-        }
-
-        .quote-box .author {
-            font-size: 13px;
-            margin-top: 10px;
-            opacity: 0.8;
-            font-style: normal;
-        }
-
-        /* Puzzle Stats */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .stat-box {
-            background-color: #f8f4ff;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            border: 2px solid #e0d4f7;
-            transition: all 0.3s ease;
-        }
-
-        .stat-box:hover {
-            border-color: #6a11cb;
-            background-color: #ede4ff;
-        }
-
-        .stat-box h3 {
-            font-size: 32px;
-            color: #6a11cb;
-            font-weight: bold;
-        }
-
-        .stat-box p {
-            font-size: 12px;
-            color: #777;
-            margin-top: 5px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
         /* Info Grid */
         .info-grid {
             display: grid;
@@ -386,11 +199,6 @@
             border-radius: 20px;
             font-size: 13px;
             letter-spacing: 0.5px;
-            transition: transform 0.2s ease;
-        }
-
-        .skill-tag:hover {
-            transform: scale(1.05);
         }
 
         /* Experience Timeline */
@@ -450,16 +258,6 @@
         .footer p {
             font-size: 14px;
             opacity: 0.9;
-            margin-bottom: 5px;
-        }
-
-        /* Divider */
-        .divider {
-            height: 2px;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            border-radius: 5px;
-            margin: 20px 0;
-            opacity: 0.3;
         }
 
         /* Responsive */
@@ -476,10 +274,6 @@
                 flex-direction: column;
                 align-items: center;
             }
-
-            .stat-box h3 {
-                font-size: 24px;
-            }
         }
     </style>
 </head>
@@ -489,12 +283,143 @@
     <div class="header">
         <div class="avatar">VJ</div>
         <h1>Vaishnavi J</h1>
-        <p>Mathematics Educator | Puzzle Solver | Aptitude Coach | Mentor</p>
+        <p>Mathematics Educator | Researcher | Mentor</p>
         <p class="college">📍 PKDAS Liberal College of Arts and Science, Lakkidi Mangalam</p>
         <div class="badges">
             <span class="badge">🎓 M.Sc. Mathematics</span>
             <span class="badge">📚 M.Ed. Mathematics</span>
             <span class="badge">💼 2 Years Experience</span>
-            <span class="badge">🧩 Puzzle Solver</span>
-            <span class="badge">🧠 Aptitude Coach</span>
-        
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- About Me -->
+        <div class="card">
+            <h2><span>👩‍🏫</span> About Me</h2>
+            <p>
+                Vaishnavi J is a dedicated and passionate Mathematics educator with a strong
+                academic background, holding both a Master of Science (M.Sc.) and a Master
+                of Education (M.Ed.) in Mathematics. With two years of teaching experience,
+                she is committed to fostering analytical thinking and conceptual clarity among
+                students. She specializes in delivering engaging and student-centered instruction,
+                and is enthusiastic about continuous learning, integrating modern pedagogical
+                techniques, and contributing to institutional growth through academic dedication
+                and professional integrity.
+            </p>
+        </div>
+
+        <!-- Personal Info -->
+        <div class="card">
+            <h2><span>📋</span> Personal Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="icon">👩</div>
+                    <h4>Name</h4>
+                    <p>Vaishnavi J</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon">🏫</div>
+                    <h4>Institution</h4>
+                    <p>PKDAS Liberal College</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon">📍</div>
+                    <h4>Location</h4>
+                    <p>Lakkidi Mangalam</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon">💼</div>
+                    <h4>Experience</h4>
+                    <p>2 Years</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon">📖</div>
+                    <h4>Specialization</h4>
+                    <p>Mathematics</p>
+                </div>
+                <div class="info-item">
+                    <div class="icon">🎯</div>
+                    <h4>Role</h4>
+                    <p>Faculty / Educator</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Qualifications -->
+        <div class="card">
+            <h2><span>🎓</span> Academic Qualifications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Specialization</th>
+                        <th>Institution</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M.Sc.</td>
+                        <td>Mathematics</td>
+                        <td>University</td>
+                        <td>✅ Completed</td>
+                    </tr>
+                    <tr>
+                        <td>M.Ed.</td>
+                        <td>Mathematics Education</td>
+                        <td>University</td>
+                        <td>✅ Completed</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc.</td>
+                        <td>Mathematics</td>
+                        <td>College</td>
+                        <td>✅ Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Experience -->
+        <div class="card">
+            <h2><span>💼</span> Teaching Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year">2022 - Present</span>
+                    <h4>Mathematics Faculty</h4>
+                    <p>PKDAS Liberal College of Arts and Science, Lakkidi Mangalam</p>
+                    <p>Delivering undergraduate mathematics lectures, curriculum planning,
+                    student mentoring, and academic assessment.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="card">
+            <h2><span>🛠️</span> Skills & Expertise</h2>
+            <div class="skills">
+                <span class="skill-tag">Advanced Mathematics</span>
+                <span class="skill-tag">Curriculum Planning</span>
+                <span class="skill-tag">Classroom Management</span>
+                <span class="skill-tag">Student Mentoring</span>
+                <span class="skill-tag">Pedagogical Methods</span>
+                <span class="skill-tag">Research & Analysis</span>
+                <span class="skill-tag">Academic Assessment</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Critical Thinking</span>
+                <span class="skill-tag">E-Learning Tools</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Vaishnavi J | Mathematics Educator</p>
+        <p>PKDAS Liberal College of Arts and Science, Lakkidi Mangalam</p>
+    </div>
+
+</body>
+</html>
